@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Mercy Gatwiri Muiruri</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><strong>👉 Contact</strong></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Get in Touch</h1>
+        <p>If you would like to discuss software engineering projects, practical philosophy, or collaboration opportunities, please fill out the form below.</p>
+
+        <form action="#" method="POST">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <p>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="fullName" placeholder="e.g. Mercy Muiruri" required>
+                </p>
+
+                <p>
+                    <label for="user-email">Email Address:</label>
+                    <input type="email" id="user-email" name="email" placeholder="name@example.com" required>
+                </p>
+
+                <p>
+                    <label for="user-phone">Phone Number (Optional):</label>
+                    <input type="tel" id="user-phone" name="phone" placeholder="e.g. +254...">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Message Details</legend>
+
+                <p>
+                    <label for="msg-subject">Subject:</label>
+                    <select id="msg-subject" name="subject">
+                        <option value="general">General Inquiry</option>
+                        <option value="project">Project Collaboration</option>
+                        <option value="freelance">Freelance/Work Opportunity</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="user-message">Your Message:</label><br>
+                    <textarea id="user-message" name="message" rows="6" cols="50" minlength="50" placeholder="Please enter your message here (minimum 50 characters required)..." required></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="newsletter" name="subscribe" value="yes">
+                    <label for="newsletter">Subscribe to my monthly developer newsletter</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Send Message</button>
+            </p>
+
+       <!-- Additional Contact Information -->
+        <section>
+            <h2>Connect Elsewhere</h2>
+            <p>You can also find me on <a href="https://github.com/mercymuiruri-hue" target="_blank">GitHub</a>.</p>
+            <p>📍 <strong>Location:</strong> Nairobi, Kenya (EAT - UTC+3)</p>
+        </section> </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mercy Gatwiri Muiruri. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
