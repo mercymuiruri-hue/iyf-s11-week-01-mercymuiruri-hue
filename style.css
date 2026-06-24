@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Conversion | Mercy Gatwiri Muiruri</title>
+    <style>
+        /* Modern Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header & Navigation Styles */
+        header {
+            background-color: #1a1d20; /* Deep charcoal */
+            color: #ffffff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #adb5bd;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* Main Grid Layout */
+        main {
+            max-width: 1100px;
+            width: 100%;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            flex: 1;
+        }
+
+        /* Article Styles */
+        article {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border-left: 4px solid #495057; /* Office slate accent */
+        }
+
+        article h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #343a40;
+        }
+
+        article p {
+            margin-bottom: 1.2rem;
+            color: #495057;
+            text-align: justify;
+        }
+
+        article p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Sidebar (Aside) Styles */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .widget {
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border: 1px solid #dee2e6;
+        }
+
+        .widget h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+            color: #343a40;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 0.4rem;
+        }
+
+        .widget p {
+            font-size: 0.95rem;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #1a1d20;
+            color: #868e96;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: auto;
+            font-size: 0.9rem;
+            border-top: 1px solid #343a40;
+        }
+
+        /* Responsive Design for Mobile Devices */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            main {
+                grid-template-columns: 1fr;
+                margin: 1rem auto;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Replaced <div class="header"> -->
+    <header>
+        <div class="logo">Mercy's Portfolio</div>
+        <!-- Replaced <div class="nav"> -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. Replaced <div class="main"> -->
+    <main>
+        <!-- Replaced <div class="article"> -->
+        <article>
+            <h2>Welcome to My Site</h2>
+            <!-- Replaced <div class="text"> elements -->
+            <p>Hi, I'm Mercy Gatwiri Muiruri! I am a student currently studying computer programming and software engineering. This is my first paragraph showcasing clean structural markup.</p>
+            <p>This is my second paragraph. I love building things for the web and organizing my workflow using modern web development standards.</p>
+        </article>
+
+        <!-- 3. Replaced <div class="sidebar"> -->
+        <aside>
+            <div class="widget">
+                <h3>Recent Posts</h3>
+                <p>Writing Clean Code: The Power of Semantic HTML & Web Accessibility</p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 4. Replaced <div class="footer"> and copyright -->
+    <footer>
+        <p class="copyright">&copy; 2026 Mercy Gatwiri Muiruri. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
